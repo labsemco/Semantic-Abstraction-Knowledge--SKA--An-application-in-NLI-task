@@ -141,15 +141,15 @@ For this, you need to have the virtual environment called rit with Python 3.9.13
 The generated pickle files have the following format (LLMs_SKA/model/dataset/answers/ folder) for each of the groups G1-G4 and combinations thereof to test new DTs:
 
 <ul class="lista-tarjetas">
-    <li>MV: Majority vote</li>
-    <li>WMV: Weighted Majority vote</li>
-    <li>GS_DT: our proposal </li>
+    <li>🚀MV: Majority vote</li>
+    <li>🚀WMV: Weighted Majority vote</li>
+    <li>🚀GS_DT: our proposal </li>
 </ul>
 
 <ul class="lista-emoji">
-    <li>🚀Group influence on LLMs for the 3-class and 2-class datasets</li>
-    <li>🚀Comparison of average accuracy performance between Baseline, AoT, SAoT, SAoT Few Shots, SKA\_MV, and SKA\_DT for the 3-class and 2-class datasets with p-values from Mann-Whitney statistical tests.</li>
-    <li>🚀Comparison of consensus mechanism performance (SKA)</li>
-    <li>🚀Failure scenarios</li>
+    <li>🎯 Group influence on LLMs for the 3-class and 2-class datasets</li>
+    <li>🎯Comparison of average accuracy performance between Baseline, AoT, SAoT, SAoT Few Shots, SKA_MV, and SKA_DT for the 3-class and 2-class datasets with p-values from Mann-Whitney statistical tests.</li>
+    <li>🎯Comparison of consensus mechanism performance (SKA)</li>
+    <li>🎯Failure scenarios</li>
 </ul>
 
