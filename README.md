@@ -3,6 +3,21 @@ Semantic Knowledge Abstraction: Consistent Reasoning in LLMs for Natural Languag
 
 Evaluation of LLMs on the NLI task (RTEGLUE, SNLI, SciTail, SICK, Diagnostic corpora)
 
+
+<img src="imgs/Framework.png" 
+     alt="Framework" 
+     width="400" 
+     height="300"
+     title="Framework">
+
+<img src="imgs/SKA.png" 
+     alt="" 
+     width="400" 
+     height="300"
+     title="Semantic Knowledge Abstraction (SKA)">
+
+
+
 <div align="center">
   
 # 🤖 AI Models Comparison
@@ -89,6 +104,7 @@ Evaluation of LLMs on the NLI task (RTEGLUE, SNLI, SciTail, SICK, Diagnostic cor
     </tr>
   </tbody>
 </table>
+
 https://ollama.com/
 
 
