@@ -1,79 +1,6 @@
 # Semantic-Abstraction-Knowledge--SKA--An-application-in-NLI-task
 Semantic Knowledge Abstraction: Consistent Reasoning in LLMs for Natural Language Inference
 
-<style>
-.lista-tarjetas {
-    list-style: none;
-    padding: 0;
-}
-
-.lista-tarjetas li {
-    background: white;
-    margin: 15px 0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-left: 5px solid #4CAF50;
-    display: flex;
-    align-items: center;
-    transition: all 0.3s ease;
-}
-
-.lista-tarjetas li:hover {
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    transform: translateY(-2px);
-}
-
-.lista-tarjetas li::before {
-    content: "✓";
-    background: #4CAF50;
-    color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-    font-weight: bold;
-}
-.lista-emoji {
-    list-style: none;
-    padding: 0;
-}
-
-.lista-emoji li {
-    padding: 12px 15px 12px 60px;
-    margin: 10px 0;
-    background: linear-gradient(45deg, #ff6b6b, #ffa726);
-    color: white;
-    border-radius: 50px;
-    position: relative;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.lista-emoji li::before {
-    content: "⚡";
-    position: absolute;
-    left: 15px;
-    font-size: 24px;
-    animation: bounce 0.5s infinite alternate;
-}
-
-.lista-emoji li:nth-child(2)::before { content: "🚀"; }
-.lista-emoji li:nth-child(3)::before { content: "⭐"; }
-.lista-emoji li:nth-child(4)::before { content: "🎯"; }
-
-@keyframes bounce {
-    from { transform: translateY(0); }
-    to { transform: translateY(-5px); }
-}
-</style>
-
-
-
-
 <div align="center">
 <img src="imgs/Framework.png" 
      alt="Framework" 
@@ -220,15 +147,9 @@ The generated pickle files have the following format (LLMs_SKA/model/dataset/ans
 </ul>
 
 <ul class="lista-emoji">
-    <li>Group influence on LLMs for the 3-class and 2-class datasets</li>
-    <li>Comparison of average accuracy performance between Baseline, AoT, SAoT, SAoT Few Shots, SKA\_MV, and SKA\_DT for the 3-class and 2-class datasets with p-values from Mann-Whitney statistical tests.</li>
-    <li>Comparison of consensus mechanism performance (SKA)</li>
-    <li>Failure scenarios</li>
+    <li>🚀Group influence on LLMs for the 3-class and 2-class datasets</li>
+    <li>🚀Comparison of average accuracy performance between Baseline, AoT, SAoT, SAoT Few Shots, SKA\_MV, and SKA\_DT for the 3-class and 2-class datasets with p-values from Mann-Whitney statistical tests.</li>
+    <li>🚀Comparison of consensus mechanism performance (SKA)</li>
+    <li>🚀Failure scenarios</li>
 </ul>
-
-
-
-
-
-
 
