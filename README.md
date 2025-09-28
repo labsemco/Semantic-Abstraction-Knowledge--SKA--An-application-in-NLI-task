@@ -1,11 +1,87 @@
 # Semantic-Abstraction-Knowledge--SKA--An-application-in-NLI-task
 Semantic Knowledge Abstraction: Consistent Reasoning in LLMs for Natural Language Inference
 
+<style>
+.lista-tarjetas {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-tarjetas li {
+    background: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-left: 5px solid #4CAF50;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.lista-tarjetas li:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.lista-tarjetas li::before {
+    content: "✓";
+    background: #4CAF50;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.lista-emoji {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-emoji li {
+    padding: 12px 15px 12px 60px;
+    margin: 10px 0;
+    background: linear-gradient(45deg, #ff6b6b, #ffa726);
+    color: white;
+    border-radius: 50px;
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.lista-emoji li::before {
+    content: "⚡";
+    position: absolute;
+    left: 15px;
+    font-size: 24px;
+    animation: bounce 0.5s infinite alternate;
+}
+
+.lista-emoji li:nth-child(2)::before { content: "🚀"; }
+.lista-emoji li:nth-child(3)::before { content: "⭐"; }
+.lista-emoji li:nth-child(4)::before { content: "🎯"; }
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-5px); }
+}
+</style>
+
+
+
+
+<div align="center">
 <img src="imgs/Framework.png" 
      alt="Framework" 
      width="600" 
      height="400"
      title="Framework">
+
+
 Methodological framework. From the Premise and Hypothesis, entities and their corresponding attributes are identified and used to extract semantic knowledge from ConceptNet, which is categorized and abstracted into groups. Task knowledge is represented as an alignment between abstraction groups and the target task classes.
 
 <img src="imgs/SKA.png" 
@@ -13,12 +89,12 @@ Methodological framework. From the Premise and Hypothesis, entities and their co
      width="600" 
      height="400"
      title="Semantic Knowledge Abstraction (SKA)">
+
+
 Prompting strategies to assess the abstraction framework. SAoT: Semantic Abstraction of Thought. The plan is formulated within the proposed abstraction framework, and the general description of the steps is expressed in terms of this framework, thereby aligning the reasoning process with the target task (NLI). SKA: Semantic Knowledge Abstraction. This approach is grounded in the proposed abstraction
 framework, which prompts the LLM through group-based semantic abstraction. The LLM generates responses for each group, which are then consolidated using two mechanisms of reasoning and debate: (1) decision tree (DT) and (2) majority vote (MV).
 
 
-<div align="center">
-  
 # 🤖 AI Models Comparison
   
 </div>
@@ -116,11 +192,19 @@ For this, you need to have the virtual environment called rit with Python 3.9.13
 
 5. Once we have obtained the relations from all the examples in the corpus samples and baseline, we will call the LLMs with the script callLLM.py and callLLM_base.py
 
-Baseline        callLLM_base.py       ->    LLMs/
-AoT             callLLM_AoT.py        ->    LLMs_AoT/
-SAoT            callLLM_SAoT.py       ->    LLMs_SAoT/
-SAoT+Fewshots   callLLM_SAoT_fs.py    ->    LLMs_SAoT_FS/
-Groups          callLLM_SKA.py        ->    LLMs_SKA/
+<table>
+  <thead>
+    <tr><th>Prompt</th><th>file</th><th>folder (output)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Baseline</td><td>        callLLM_base.py</td><td>    LLMs/</tr>
+    <tr><td>AoT     </td><td>        callLLM_AoT.py </td><td>    LLMs_AoT/</tr>
+    <tr><td>SAoT     </td><td>        callLLM_SAoT.py </td><td>    LLMs_SAoT/</tr>
+    <tr><td>SAoT+fewshots     </td><td>        callLLM_SAoT_fs.py </td><td>    LLMs_SAoT_FS/</tr>
+    <tr><td>SKA     </td><td>        callLLM_SKA.py </td><td>    LLMs_SKA/</tr>
+  </tbody>
+</table>
+
 
 6. To obtain results, it is necessary to validate that the responses from the samples are complete. To do this, run the val_answers_complete_ALL.ipynb notebook (LLMs_SKA) to request a response again (processed/ folder) if one with the correct format is not found. If this attempt is unsuccessful, it is labeled as NA and is not taken into account for the results. This is converted into pickle files stored in the complete/ folder. (LLMs_SKA/model/dataset/)
 
@@ -129,12 +213,18 @@ Groups          callLLM_SKA.py        ->    LLMs_SKA/
 8. Our statistical tests require the creation of Cross Validation, where 10 of the 13 samples are chosen to obtain accuracy and 3 are used to train the SKA_DT (our proposal) and to obtain weights for the Weighted Majority Vote WMV results. We process sample 14 to generate the fewshots for AoT_fs.
 The generated pickle files have the following format (LLMs_SKA/model/dataset/answers/ folder) for each of the groups G1-G4 and combinations thereof to test new DTs:
 
-VM: Majority vote
-WVM: Weighted Majority vote
-GS_DT: our proposal 
+<ul class="lista-tarjetas">
+    <li>MV: Majority vote</li>
+    <li>WMV: Weighted Majority vote</li>
+    <li>GS_DT: our proposal </li>
+</ul>
 
-+Comparison of average accuracy performance between Baseline, AoT, SAoT, SAoT Few Shots, SKA\_MV, and SKA\_DT for the 3-class and 2-class datasets with p-values from Mann-Whitney statistical tests.
-
+<ul class="lista-emoji">
+    <li>Group influence on LLMs for the 3-class and 2-class datasets</li>
+    <li>Comparison of average accuracy performance between Baseline, AoT, SAoT, SAoT Few Shots, SKA\_MV, and SKA\_DT for the 3-class and 2-class datasets with p-values from Mann-Whitney statistical tests.</li>
+    <li>Comparison of consensus mechanism performance (SKA)</li>
+    <li>Failure scenarios</li>
+</ul>
 
 
 
