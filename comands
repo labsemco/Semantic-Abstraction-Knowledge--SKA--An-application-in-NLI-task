@@ -1,0 +1,319 @@
+################### GET RELATIONS OF ENTITIES P-H ####################
+SICK
+
+nohup {env_rit} Relaciones_TH_esp2.py "SICK/sick1.pickle"> output2/relationships/SICK/log/salidaSICK1.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SICK/sick2.pickle"> output2/relationships/SICK/log/salidaSICK2.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SICK/sick3.pickle"> output2/relationships/SICK/log/salidaSICK3.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SICK/sick4.pickle"> output2/relationships/SICK/log/salidaSICK4.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SICK/sick5.pickle"> output2/relationships/SICK/log/salidaSICK5.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SICK/sick6.pickle"> output2/relationships/SICK/log/salidaSICK6.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SICK/sick7.pickle"> output2/relationships/SICK/log/salidaSICK7.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SICK/sick8.pickle"> output2/relationships/SICK/log/salidaSICK8.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SICK/sick9.pickle"> output2/relationships/SICK/log/salidaSICK9.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SICK/sick10.pickle"> output2/relationships/SICK/log/salidaSICK10.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SICK/sick11.pickle"> output2/relationships/SICK/log/salidaSICK11.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SICK/sick12.pickle"> output2/relationships/SICK/log/salidaSICK12.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SICK/sick14.pickle"> output2/relationships/SICK/log/salidaSICK14.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SICK/sick14.pickle"> output2/relationships/SICK/log/salidaSICK14.txt &
+
+SNLI
+
+nohup {env_rit} Relaciones_TH_esp2.py "SNLI/snli1.pickle"> output2/relationships/SNLI/log/salidaSNLI1.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SNLI/snli2.pickle"> output2/relationships/SNLI/log/salidaSNLI2.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SNLI/snli3.pickle"> output2/relationships/SNLI/log/salidaSNLI3.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SNLI/snli4.pickle"> output2/relationships/SNLI/log/salidaSNLI4.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SNLI/snli5.pickle"> output2/relationships/SNLI/log/salidaSNLI5.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SNLI/snli6.pickle"> output2/relationships/SNLI/log/salidaSNLI6.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SNLI/snli7.pickle"> output2/relationships/SNLI/log/salidaSNLI7.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SNLI/snli8.pickle"> output2/relationships/SNLI/log/salidaSNLI8.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SNLI/snli9.pickle"> output2/relationships/SNLI/log/salidaSNLI9.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SNLI/snli10.pickle"> output2/relationships/SNLI/log/salidaSNLI10.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SNLI/snli11.pickle"> output2/relationships/SNLI/log/salidaSNLI11.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SNLI/snli12.pickle"> output2/relationships/SNLI/log/salidaSNLI12.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SNLI/snli14.pickle"> output2/relationships/SNLI/log/salidaSNLI14.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "SNLI/snli14.pickle"> output2/relationships/SNLI/log/salidaSNLI14.txt &
+
+Scitail
+nohup {env_rit} Relaciones_TH_esp2.py "Scitail/scitail1.pickle"> output2/relationships/Scitail/log/salidaScitail1.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "Scitail/scitail2.pickle"> output2/relationships/Scitail/log/salidaScitail2.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "Scitail/scitail3.pickle"> output2/relationships/Scitail/log/salidaScitail3.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "Scitail/scitail4.pickle"> output2/relationships/Scitail/log/salidaScitail4.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "Scitail/scitail5.pickle"> output2/relationships/Scitail/log/salidaScitail5.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "Scitail/scitail6.pickle"> output2/relationships/Scitail/log/salidaScitail6.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "Scitail/scitail7.pickle"> output2/relationships/Scitail/log/salidaScitail7.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "Scitail/scitail8.pickle"> output2/relationships/Scitail/log/salidaScitail8.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "Scitail/scitail9.pickle"> output2/relationships/Scitail/log/salidaScitail9.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "Scitail/scitail10.pickle"> output2/relationships/Scitail/log/salidaScitail10.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "Scitail/scitail11.pickle"> output2/relationships/Scitail/log/salidaScitail11.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "Scitail/scitail12.pickle"> output2/relationships/Scitail/log/salidaScitail12.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "Scitail/scitail14.pickle"> output2/relationships/Scitail/log/salidaScitail14.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "Scitail/scitail14.pickle"> output2/relationships/Scitail/log/salidaScitail14.txt &
+
+RTEGLUE
+nohup {env_rit} Relaciones_TH_esp2.py "RTEGLUE/rteglue1.pickle"> output2/relationships/RTEGLUE/log/salidarteglue1.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "RTEGLUE/rteglue2.pickle"> output2/relationships/RTEGLUE/log/salidarteglue2.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "RTEGLUE/rteglue3.pickle"> output2/relationships/RTEGLUE/log/salidarteglue3.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "RTEGLUE/rteglue4.pickle"> output2/relationships/RTEGLUE/log/salidarteglue4.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "RTEGLUE/rteglue5.pickle"> output2/relationships/RTEGLUE/log/salidarteglue5.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "RTEGLUE/rteglue6.pickle"> output2/relationships/RTEGLUE/log/salidarteglue6.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "RTEGLUE/rteglue7.pickle"> output2/relationships/RTEGLUE/log/salidarteglue7.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "RTEGLUE/rteglue8.pickle"> output2/relationships/RTEGLUE/log/salidarteglue8.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "RTEGLUE/rteglue9.pickle"> output2/relationships/RTEGLUE/log/salidarteglue9.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "RTEGLUE/rteglue10.pickle"> output2/relationships/RTEGLUE/log/salidarteglue10.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "RTEGLUE/rteglue11.pickle"> output2/relationships/RTEGLUE/log/salidarteglue11.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "RTEGLUE/rteglue12.pickle"> output2/relationships/RTEGLUE/log/salidarteglue12.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "RTEGLUE/rteglue14.pickle"> output2/relationships/RTEGLUE/log/salidarteglue14.txt &
+nohup {env_rit} Relaciones_TH_esp2.py "RTEGLUE/rteglue14.pickle"> output2/relationships/RTEGLUE/log/salidarteglue14.txt &
+
+DIAG
+nohup {env_rit} Relaciones_TH_esp2.py "DIAG/diag1.pickle"> output2/relationships/DIAG/log/salidadiag1.txt &
+
+
+
+############### PROMPTING LLMS
+
+################### BASE  ####################
+
+llama3.2
+nohup {env_rit} callsLLM_base.py "llama3.2" "1" "DIAG/"> LLMs/llama3.2/DIAG/salidabase.txt & 
+nohup {env_rit} callsLLM_base.py "llama3.2" "14" "SICK/"> LLMs/llama3.2/SICK/salidabase.txt & 
+nohup {env_rit} callsLLM_base.py "llama3.2" "14" "SNLI/"> LLMs/llama3.2/SNLI/salidabase.txt & 
+nohup {env_rit} callsLLM_base.py "llama3.2" "14" "Scitail/"> LLMs/llama3.2/Scitail/salidabase.txt & 
+nohup {env_rit} callsLLM_base.py "llama3.2" "14" "RTEGLUE/"> LLMs/llama3.2/RTEGLUE/salidabase.txt & 
+
+gemma2:2b
+nohup {env_rit} callsLLM_base.py "gemma2:2b" "1" "DIAG/"> LLMs/gemma2:2b/DIAG/salidabase.txt &
+nohup {env_rit} callsLLM_base.py "gemma2:2b" "14" "SICK/"> LLMs/gemma2:2b/SICK/salidabase.txt & 
+nohup {env_rit} callsLLM_base.py "gemma2:2b" "14" "SNLI/"> LLMs/gemma2:2b/SNLI/salidabase.txt & 
+nohup {env_rit} callsLLM_base.py "gemma2:2b" "14" "Scitail/"> LLMs/gemma2:2b/Scitail/salidabase.txt & 
+nohup {env_rit} callsLLM_base.py "gemma2:2b" "14" "RTEGLUE/"> LLMs/gemma2:2b/RTEGLUE/salidabase.txt & 
+
+llama3.1
+nohup {env_rit} callsLLM_base.py "llama3.1" "1" "DIAG/"> LLMs/llama3.1/DIAG/salidabase.txt &
+nohup {env_rit} callsLLM_base.py "llama3.1" "14" "SICK/"> LLMs/llama3.1/SICK/salidabase.txt & 
+nohup {env_rit} callsLLM_base.py "llama3.1" "14" "SNLI/"> LLMs/llama3.1/SNLI/salidabase.txt & 
+nohup {env_rit} callsLLM_base.py "llama3.1" "14" "Scitail/"> LLMs/llama3.1/Scitail/salidabase.txt & 
+nohup {env_rit} callsLLM_base.py "llama3.1" "14" "RTEGLUE/"> LLMs/llama3.1/RTEGLUE/salidabase.txt & 
+
+gemma2
+nohup {env_rit} callsLLM_base.py "gemma2" "1" "DIAG/"> LLMs/gemma2/DIAG/salidabase.txt & 
+nohup {env_rit} callsLLM_base.py "gemma2" "14" "SICK/"> LLMs/gemma2/SICK/salidabase.txt & 
+nohup {env_rit} callsLLM_base.py "gemma2" "14" "SNLI/"> LLMs/gemma2/SNLI/salidabase.txt &
+nohup {env_rit} callsLLM_base.py "gemma2" "14" "Scitail/"> LLMs/gemma2/Scitail/salidabase.txt & 
+nohup {env_rit} callsLLM_base.py "gemma2" "14" "RTEGLUE/"> LLMs/gemma2/RTEGLUE/salidabase.txt & 
+
+phi3:medium
+nohup {env_rit} callsLLM_base.py "phi3:medium" "1" "DIAG/"> LLMs/phi3:medium/DIAG/salidabase.txt &
+nohup {env_rit} callsLLM_base.py "phi3:medium" "14" "SNLI/"> LLMs/phi3:medium/SNLI/salidabase.txt &
+nohup {env_rit} callsLLM_base.py "phi3:medium" "14" "SICK/"> LLMs/phi3:medium/SICK/salidabase.txt &
+nohup {env_rit} callsLLM_base.py "phi3:medium" "14" "Scitail/"> LLMs/phi3:medium/Scitail/salidabase.txt &
+nohup {env_rit} callsLLM_base.py "phi3:medium" "14" "RTEGLUE/"> LLMs/phi3:medium/RTEGLUE/salidabase.txt &
+
+phi3
+nohup {env_rit} callsLLM_base.py "phi3" "1" "DIAG/"> LLMs/phi3/DIAG/salidabase.txt &
+nohup {env_rit} callsLLM_base.py "phi3" "14" "SNLI/"> LLMs/phi3/SNLI/salidabase.txt &
+nohup {env_rit} callsLLM_base.py "phi3" "14" "SICK/"> LLMs/phi3/SICK/salidabase.txt &
+nohup {env_rit} callsLLM_base.py "phi3" "14" "RTEGLUE/"> LLMs/phi3/RTEGLUE/salidabase.txt &
+nohup {env_rit} callsLLM_base.py "phi3" "14" "Scitail/"> LLMs/phi3/Scitail/salidabase.txt &
+
+
+##################           CALLS FOR SKA   #################
+
+llama3.2
+nohup {env_rit} callsLLM_SKA.py "llama3.2" "1" "DIAG/"> LLMs_SKA/llama3.2/DIAG/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "llama3.2" "14" "SICK/"> LLMs_SKA/llama3.2/SICK/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "llama3.2" "14" "SNLI/"> LLMs_SKA/llama3.2/SNLI/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "llama3.2" "14" "Scitail/"> LLMs_SKA/llama3.2/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "llama3.2" "14" "RTEGLUE/"> LLMs_SKA/llama3.2/RTEGLUE/salida.txt & 
+
+gemma2:2b
+nohup {env_rit} callsLLM_SKA.py "gemma2:2b" "1" "DIAG/"> LLMs_SKA/gemma2:2b/DIAG/salida.txt &
+nohup {env_rit} callsLLM_SKA.py "gemma2:2b" "14" "SICK/"> LLMs_SKA/gemma2:2b/SICK/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "gemma2:2b" "14" "SNLI/"> LLMs_SKA/gemma2:2b/SNLI/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "gemma2:2b" "14" "Scitail/"> LLMs_SKA/gemma2:2b/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "gemma2:2b" "14" "RTEGLUE/"> LLMs_SKA/gemma2:2b/RTEGLUE/salida.txt & 
+
+llama3.1
+nohup {env_rit} callsLLM_SKA.py "llama3.1" "1" "DIAG/"> LLMs_SKA/llama3.1/DIAG/salida.txt &
+nohup {env_rit} callsLLM_SKA.py "llama3.1" "14" "SICK/"> LLMs_SKA/llama3.1/SICK/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "llama3.1" "14" "SNLI/"> LLMs_SKA/llama3.1/SNLI/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "llama3.1" "14" "Scitail/"> LLMs_SKA/llama3.1/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "llama3.1" "14" "RTEGLUE/"> LLMs_SKA/llama3.1/RTEGLUE/salida.txt & 
+
+gemma2
+nohup {env_rit} callsLLM_SKA.py "gemma2" "1" "DIAG/"> LLMs_SKA/gemma2/DIAG/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "gemma2" "14" "SICK/"> LLMs_SKA/gemma2/SICK/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "gemma2" "14" "SNLI/"> LLMs_SKA/gemma2/SNLI/salida.txt &
+nohup {env_rit} callsLLM_SKA.py "gemma2" "14" "Scitail/"> LLMs_SKA/gemma2/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "gemma2" "14" "RTEGLUE/"> LLMs_SKA/gemma2/RTEGLUE/salida.txt & 
+
+phi3
+nohup {env_rit} callsLLM_SKA.py "phi3" "1" "DIAG/"> LLMs_SKA/phi3/DIAG/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "phi3" "14" "SNLI/"> LLMs_SKA/phi3/SNLI/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "phi3" "14" "Scitail/"> LLMs_SKA/phi3/Scitail/salida.txt &
+nohup {env_rit} callsLLM_SKA.py "phi3" "14" "SICK/"> LLMs_SKA/phi3/SICK/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "phi3" "14" "RTEGLUE/"> LLMs_SKA/phi3/RTEGLUE/salida.txt & 
+
+phi3:medium
+nohup {env_rit} callsLLM_SKA.py "phi3:medium" "1" "DIAG/"> LLMs_SKA/phi3:medium/DIAG/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "phi3:medium" "14" "SNLI/"> LLMs_SKA/phi3:medium/SNLI/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "phi3:medium" "14" "SICK/"> LLMs_SKA/phi3:medium/SICK/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "phi3:medium" "14" "Scitail/"> LLMs_SKA/phi3:medium/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_SKA.py "phi3:medium" "14" "RTEGLUE/"> LLMs_SKA/phi3:medium/RTEGLUE/salida.txt & 
+
+
+ #############################   CALLS LLMS FOR GROUPS AOT  #########################
+
+gemma2
+nohup {env_rit} callsLLM_AoT.py "gemma2" "1" "DIAG/"> LLMs_AoT/gemma2/DIAG/salida.txt & 
+nohup {env_rit} callsLLM_AoT.py "gemma2" "14" "SICK/"> LLMs_AoT/gemma2/SICK/salida.txt & 
+nohup {env_rit} callsLLM_AoT.py "gemma2" "14" "SNLI/"> LLMs_AoT/gemma2/SNLI/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "gemma2" "14" "Scitail/"> LLMs_AoT/gemma2/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_AoT.py "gemma2" "14" "RTEGLUE/"> LLMs_AoT/gemma2/RTEGLUE/salida.txt & 
+
+gemma2:2b
+nohup {env_rit} callsLLM_AoT.py "gemma2:2b" "1" "DIAG/"> LLMs_AoT/gemma2:2b/DIAG/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "gemma2:2b" "14" "SICK/"> LLMs_AoT/gemma2:2b/SICK/salida.txt & 
+nohup {env_rit} callsLLM_AoT.py "gemma2:2b" "14" "SNLI/"> LLMs_AoT/gemma2:2b/SNLI/salida.txt & 
+nohup {env_rit} callsLLM_AoT.py "gemma2:2b" "14" "Scitail/"> LLMs_AoT/gemma2:2b/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_AoT.py "gemma2:2b" "14" "RTEGLUE/"> LLMs_AoT/gemma2:2b/RTEGLUE/salida.txt & 
+
+llama3.1
+nohup {env_rit} callsLLM_AoT.py "llama3.1" "1" "DIAG/"> LLMs_AoT/llama3.1/DIAG/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "llama3.1" "14" "SICK/"> LLMs_AoT/llama3.1/SICK/salida.txt & 
+nohup {env_rit} callsLLM_AoT.py "llama3.1" "14" "SNLI/"> LLMs_AoT/llama3.1/SNLI/salida.txt & 
+nohup {env_rit} callsLLM_AoT.py "llama3.1" "14" "Scitail/"> LLMs_AoT/llama3.1/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_AoT.py "llama3.1" "14" "RTEGLUE/"> LLMs_AoT/llama3.1/RTEGLUE/salida.txt & 
+
+llama3.2
+nohup {env_rit} callsLLM_AoT.py "llama3.2" "1" "DIAG/"> LLMs_AoT/llama3.2/DIAG/salida.txt & 
+nohup {env_rit} callsLLM_AoT.py "llama3.2" "14" "SICK/"> LLMs_AoT/llama3.2/SICK/salida.txt & 
+nohup {env_rit} callsLLM_AoT.py "llama3.2" "14" "SNLI/"> LLMs_AoT/llama3.2/SNLI/salida.txt & 
+nohup {env_rit} callsLLM_AoT.py "llama3.2" "14" "Scitail/"> LLMs_AoT/llama3.2/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_AoT.py "llama3.2" "14" "RTEGLUE/"> LLMs_AoT/llama3.2/RTEGLUE/salida.txt & 
+
+phi3:medium
+nohup {env_rit} callsLLM_AoT.py "phi3:medium" "1" "DIAG/"> LLMs_AoT/phi3:medium/DIAG/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3:medium" "14" "SICK/"> LLMs_AoT/phi3:medium/SICK/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3:medium" "14" "SNLI/"> LLMs_AoT/phi3:medium/SNLI/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3:medium" "14" "Scitail/"> LLMs_AoT/phi3:medium/Scitail/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3:medium" "14" "RTEGLUE/"> LLMs_AoT/phi3:medium/RTEGLUE/salida.txt &
+
+phi3
+nohup {env_rit} callsLLM_AoT.py "phi3" "1" "DIAG/"> LLMs_AoT/phi3/DIAG/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3" "14" "SICK/"> LLMs_AoT/phi3/SICK/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3" "14" "RTEGLUE/"> LLMs_AoT/phi3/RTEGLUE/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3" "14" "Scitail/"> LLMs_AoT/phi3/Scitail/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3" "14" "SNLI/"> LLMs_AoT/phi3/SNLI/salida.txt &
+
+
+
+ #############################   CALLS LLMS FOR GROUPS AOT  #########################
+
+gemma2
+nohup {env_rit} callsLLM_SAoT.py "gemma2" "1" "DIAG/"> LLMs_SAoT/gemma2/DIAG/salida.txt & 
+nohup {env_rit} callsLLM_SAoT.py "gemma2" "14" "SICK/"> LLMs_SAoT/gemma2/SICK/salida.txt & 
+nohup {env_rit} callsLLM_SAoT.py "gemma2" "14" "SNLI/"> LLMs_SAoT/gemma2/SNLI/salida.txt &
+nohup {env_rit} callsLLM_SAoT.py "gemma2" "14" "Scitail/"> LLMs_SAoT/gemma2/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_SAoT.py "gemma2" "14" "RTEGLUE/"> LLMs_SAoT/gemma2/RTEGLUE/salida.txt & 
+
+gemma2:2b
+nohup {env_rit} callsLLM_SAoT.py "gemma2:2b" "1" "DIAG/"> LLMs_SAoT/gemma2:2b/DIAG/salida.txt &
+nohup {env_rit} callsLLM_SAoT.py "gemma2:2b" "14" "SICK/"> LLMs_SAoT/gemma2:2b/SICK/salida.txt & 
+nohup {env_rit} callsLLM_SAoT.py "gemma2:2b" "14" "SNLI/"> LLMs_SAoT/gemma2:2b/SNLI/salida.txt & 
+nohup {env_rit} callsLLM_SAoT.py "gemma2:2b" "14" "Scitail/"> LLMs_SAoT/gemma2:2b/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_SAoT.py "gemma2:2b" "14" "RTEGLUE/"> LLMs_SAoT/gemma2:2b/RTEGLUE/salida.txt & 
+
+llama3.1
+nohup {env_rit} callsLLM_SAoT.py "llama3.1" "1" "DIAG/"> LLMs_SAoT/llama3.1/DIAG/salida.txt &
+nohup {env_rit} callsLLM_SAoT.py "llama3.1" "14" "SICK/"> LLMs_SAoT/llama3.1/SICK/salida.txt & 
+nohup {env_rit} callsLLM_SAoT.py "llama3.1" "14" "SNLI/"> LLMs_SAoT/llama3.1/SNLI/salida.txt & 
+nohup {env_rit} callsLLM_SAoT.py "llama3.1" "14" "Scitail/"> LLMs_SAoT/llama3.1/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_SAoT.py "llama3.1" "14" "RTEGLUE/"> LLMs_SAoT/llama3.1/RTEGLUE/salida.txt & 
+
+llama3.2
+nohup {env_rit} callsLLM_SAoT.py "llama3.2" "1" "DIAG/"> LLMs_SAoT/llama3.2/DIAG/salida.txt & 
+nohup {env_rit} callsLLM_SAoT.py "llama3.2" "14" "SICK/"> LLMs_SAoT/llama3.2/SICK/salida.txt & 
+nohup {env_rit} callsLLM_SAoT.py "llama3.2" "14" "SNLI/"> LLMs_SAoT/llama3.2/SNLI/salida.txt & 
+nohup {env_rit} callsLLM_SAoT.py "llama3.2" "14" "Scitail/"> LLMs_SAoT/llama3.2/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_SAoT.py "llama3.2" "14" "RTEGLUE/"> LLMs_SAoT/llama3.2/RTEGLUE/salida.txt & 
+
+phi3:medium
+nohup {env_rit} callsLLM_AoT.py "phi3:medium" "1" "DIAG/"> LLMs_SAoT/phi3:medium/DIAG/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3:medium" "14" "SICK/"> LLMs_SAoT/phi3:medium/SICK/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3:medium" "14" "SNLI/"> LLMs_SAoT/phi3:medium/SNLI/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3:medium" "14" "Scitail/"> LLMs_SAoT/phi3:medium/Scitail/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3:medium" "14" "RTEGLUE/"> LLMs_SAoT/phi3:medium/RTEGLUE/salida.txt &
+
+phi3
+nohup {env_rit} callsLLM_AoT.py "phi3" "1" "DIAG/"> LLMs_SAoT/phi3/DIAG/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3" "14" "SICK/"> LLMs_SAoT/phi3/SICK/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3" "14" "RTEGLUE/"> LLMs_SAoT/phi3/RTEGLUE/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3" "14" "Scitail/"> LLMs_SAoT/phi3/Scitail/salida.txt &
+nohup {env_rit} callsLLM_AoT.py "phi3" "14" "SNLI/"> LLMs_SAoT/phi3/SNLI/salida.txt &
+
+
+################################### SAoT Few Shots #####################################
+
+gemma2
+nohup {env_rit} callsLLM_SAoT_Fs.py "gemma2" "1" "DIAG/"> LLMs_SAoT_FS/gemma2/DIAG/salida.txt &
+nohup {env_rit} callsLLM_SAoT_Fs.py "gemma2" "14" "SICK/"> LLMs_SAoT_FS/gemma2/SICK/salida.txt &
+nohup {env_rit} callsLLM_SAoT_Fs.py "gemma2" "14" "SNLI/"> LLMs_SAoT_FS/gemma2/SNLI/salida.txt &
+nohup {env_rit} callsLLM_SAoT_Fs.py "gemma2" "14" "Scitail/"> LLMs_SAoT_FS/gemma2/Scitail/salida.txt &
+nohup {env_rit} callsLLM_SAoT_Fs.py "gemma2" "14" "RTEGLUE/"> LLMs_SAoT_FS/gemma2/RTEGLUE/salida.txt &
+
+gemma2:2b
+nohup {env_rit} callsLLM_SAoT_Fs.py "gemma2:2b" "1" "DIAG/"> LLMs_SAoT_FS/gemma2:2b/DIAG/salida.txt & 
+nohup {env_rit} callsLLM_SAoT_Fs.py "gemma2:2b" "14" "SICK/"> LLMs_SAoT_FS/gemma2:2b/SICK/salida.txt & 
+nohup {env_rit} callsLLM_SAoT_Fs.py "gemma2:2b" "14" "SNLI/"> LLMs_SAoT_FS/gemma2:2b/SNLI/salida.txt &
+nohup {env_rit} callsLLM_SAoT_Fs.py "gemma2:2b" "14" "Scitail/"> LLMs_SAoT_FS/gemma2:2b/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_SAoT_Fs.py "gemma2:2b" "14" "RTEGLUE/"> LLMs_SAoT_FS/gemma2:2b/RTEGLUE/salida.txt & 
+
+llama3.1
+nohup {env_rit} callsLLM_SAoT_Fs.py "llama3.1" "1" "DIAG/"> LLMs_SAoT_FS/llama3.1/DIAG/salida.txt & 
+nohup {env_rit} callsLLM_SAoT_Fs.py "llama3.1" "14" "SICK/"> LLMs_SAoT_FS/llama3.1/SICK/salida.txt & 
+nohup {env_rit} callsLLM_SAoT_Fs.py "llama3.1" "14" "SNLI/"> LLMs_SAoT_FS/llama3.1/SNLI/salida.txt & 
+nohup {env_rit} callsLLM_SAoT_Fs.py "llama3.1" "14" "Scitail/"> LLMs_SAoT_FS/llama3.1/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_SAoT_Fs.py "llama3.1" "14" "RTEGLUE/"> LLMs_SAoT_FS/llama3.1/RTEGLUE/salida.txt & 
+
+llama3.2
+nohup {env_rit} callsLLM_SAoT_Fs.py "llama3.2" "1" "DIAG/"> LLMs_SAoT_FS/llama3.2/DIAG/salida.txt & 
+nohup {env_rit} callsLLM_SAoT_Fs.py "llama3.2" "14" "SICK/"> LLMs_SAoT_FS/llama3.2/SICK/salida.txt & 
+nohup {env_rit} callsLLM_SAoT_Fs.py "llama3.2" "14" "Scitail/"> LLMs_SAoT_FS/llama3.2/Scitail/salida.txt & 
+nohup {env_rit} callsLLM_SAoT_Fs.py "llama3.2" "14" "SNLI/"> LLMs_SAoT_FS/llama3.2/SNLI/salida.txt & 
+nohup {env_rit} callsLLM_SAoT_Fs.py "llama3.2" "14" "RTEGLUE/"> LLMs_SAoT_FS/llama3.2/RTEGLUE/salida.txt & 
+
+phi3:medium
+nohup {env_rit} callsLLM_SAoT_Fs.py "phi3:medium" "1" "DIAG/"> LLMs_SAoT_FS/phi3:medium/DIAG/salida.txt &
+nohup {env_rit} callsLLM_SAoT_Fs.py "phi3:medium" "14" "SNLI/"> LLMs_SAoT_FS/phi3:medium/SNLI/salida.txt &
+nohup {env_rit} callsLLM_SAoT_Fs.py "phi3:medium" "14" "SICK/"> LLMs_SAoT_FS/phi3:medium/SICK/salida.txt &
+nohup {env_rit} callsLLM_SAoT_Fs.py "phi3:medium" "14" "Scitail/"> LLMs_SAoT_FS/phi3:medium/Scitail/salida.txt &
+nohup {env_rit} callsLLM_SAoT_Fs.py "phi3:medium" "14" "RTEGLUE/"> LLMs_SAoT_FS/phi3:medium/RTEGLUE/salida.txt &
+
+phi3
+nohup {env_rit} callsLLM_SAoT_Fs.py "phi3" "1" "DIAG/"> LLMs_SAoT_FS/phi3/DIAG/salida.txt &
+nohup {env_rit} callsLLM_SAoT_Fs.py "phi3" "14" "SICK/"> LLMs_SAoT_FS/phi3/SICK/salida.txt &
+nohup {env_rit} callsLLM_SAoT_Fs.py "phi3" "14" "SNLI/"> LLMs_SAoT_FS/phi3/SNLI/salida.txt &
+nohup {env_rit} callsLLM_SAoT_Fs.py "phi3" "14" "RTEGLUE/"> LLMs_SAoT_FS/phi3/RTEGLUE/salida.txt &
+nohup {env_rit} callsLLM_SAoT_Fs.py "phi3" "14" "Scitail/"> LLMs_SAoT_FS/phi3/Scitail/salida.txt &
+
+############## DIRECT RELATIONS FROM CONCEPTNET (hyperonym,hyponym,sinonymy, antonymy) ############
+
+DIAGNOSTIC
+nohup {env_rit} Relaciones_TH_s4r.py "DIAG/diag1.pickle"> output2/relationships/DIAG/salida_s4r.txt &
+
+nohup {env_rit} callsLLM_DR_4r.py "gemma2" "1" "DIAG/"> LLMs/gemma2/DIAG/salida_allRelations4r.txt &
+nohup {env_rit} callsLLM_DR_4r.py "gemma2:2b" "1" "DIAG/"> LLMs/gemma2:2b/DIAG/salida_allRelations4r.txt &
+nohup {env_rit} callsLLM_DR_4r.py "llama3.1" "1" "DIAG/"> LLMs/llama3.1/DIAG/salida_allRelations4r.txt &
+nohup {env_rit} callsLLM_DR_4r.py "llama3.2" "1" "DIAG/"> LLMs/llama3.2/DIAG/salida_allRelations4r.txt &
+nohup {env_rit} callsLLM_DR_4r.py "phi3:medium" "1" "DIAG/"> LLMs/phi3:medium/DIAG/salida_allRelations4r.txt &
+nohup {env_rit} callsLLM_DR_4r.py "phi3" "1" "DIAG/"> LLMs/phi3/DIAG/salida_allRelations4r.txt &
+
+#################################### SEMANTIC KNOWLEDGE ENTITIES  #####################################
+
+nohup {env_rit} callsLLM_AR.py "gemma2:2b" "1" "DIAG/"> LLMs/gemma2:2b/DIAG/salida_AR.txt &
+nohup {env_rit} callsLLM_AR.py "llama3.2" "1" "DIAG/"> LLMs/llama3.2/DIAG/salida_AR.txt &
+nohup {env_rit} callsLLM_AR.py "phi3" "1" "DIAG/"> LLMs/phi3/DIAG/salida_AR.txt &
+nohup {env_rit} callsLLM_AR.py "phi3:medium" "1" "DIAG/"> LLMs/phi3:medium/DIAG/salida_AR.txt &
+nohup {env_rit} callsLLM_AR.py "gemma2" "1" "DIAG/"> LLMs/gemma2/DIAG/salida_AR.txt &
+nohup {env_rit} callsLLM_AR.py "llama3.1" "1" "DIAG/"> LLMs/llama3.1/DIAG/salida_AR.txt &
