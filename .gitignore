@@ -1,6 +1,5 @@
 corpus/
 data/
-output2/
 *.pickle
 *salida.txt
 *salidabase.txt

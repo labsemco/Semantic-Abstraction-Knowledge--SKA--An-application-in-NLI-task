@@ -1,0 +1,240 @@
+** Sample 1 **
+* Input *
+You are an expert in Recognizing Textual Entailment over pairs of Premise and Hypothesis.
+Classify the relationship between the given Premise and Hypothesis as one of the following: "Entailment", "Neutral" or "Contradiction". 
+
+Premise: The Stratosphere and Ozone Layer Above the troposphere is the stratosphere , where air flow is mostly horizontal.
+Hypothesis: The stratosphere is the layer above the troposphere.
+
+* Let's think step by step *
+
+Step 1: Identify all the relationships of generalization, equivalence, opposition, concretization or specificity between terms from the premise to the hypothesis. This process is performed for each of the terms in the hypothesis.
+Use the following format for relations: (p_i,rel,h_j), where p_i is a term from the premise, h_j is a term from the hypothesis, and rel is the relation linking these terms.
+If any terms of the hypothesis with an unknown relationship with terms in the premise, identify them as ("",unknown,h_k) where h_k is in the hypothesis and there is no term in the premise that is linked to the hypothesis.
+List the relationships found.
+
+[(' stratosphere', 'same', ' stratosphere'), ('above layer', 'same', 'above layer'), (' troposphere', 'same', ' troposphere')]
+
+Step 2: Align all the relationships found with the NLI labels: Entailment, Neutral, Contradiction, classifying them into groups G1, G2, G3 and G4 according to the following:
+G1: will contain the list of generalization or equivalence relationships that usually correspond to Entailment.
+G2: will contain the list of relationships of opposition that often correspond to Contradiction.
+G3: will contain the list of relationships of concretization or specificity that typically correspond to Neutral.
+G4: will contain the list of terms of the hypothesis with an unknown relationship with the premise. 
+
+G1: [(' stratosphere', 'same', ' stratosphere'), ('above layer', 'same', 'above layer'), (' troposphere', 'same', ' troposphere')]
+G2: []
+G3: []
+G4: []
+
+Step 3: Analyze each group of relationships, weigh the groups obtained that support your decision, and classify the correct label for the premise and hypothesis presented and give an explanation.
+
+* Output *
+{
+"G1":[(' stratosphere', 'same', ' stratosphere'), ('above layer', 'same', 'above layer'), (' troposphere', 'same', ' troposphere')],
+"G2":[],
+"G3":[],
+"G4":[],
+"Answer": "ENTAILMENT",
+"Explanation": ""
+}
+
+** Sample 2 **
+* Input *
+You are an expert in Recognizing Textual Entailment over pairs of Premise and Hypothesis.
+Classify the relationship between the given Premise and Hypothesis as one of the following: "Entailment", "Neutral" or "Contradiction". 
+
+Premise: Once the amino acid-tRNA complex is bound the ribosome reads the next codon and the complementary amino acid-tRNA complex binds.
+Hypothesis: When a chain of amino acids reaches a stop codon, released from the ribosome.
+
+* Let's think step by step *
+
+Step 1: Identify all the relationships of generalization, equivalence, opposition, concretization or specificity between terms from the premise to the hypothesis. This process is performed for each of the terms in the hypothesis.
+Use the following format for relations: (p_i,rel,h_j), where p_i is a term from the premise, h_j is a term from the hypothesis, and rel is the relation linking these terms.
+If any terms of the hypothesis with an unknown relationship with terms in the premise, identify them as ("",unknown,h_k) where h_k is in the hypothesis and there is no term in the premise that is linked to the hypothesis.
+List the relationships found.
+
+[('complementary amino', 'same', ' amino'), ('next codon', 'same', ' codon'), (' ribosome', 'same', ' ribosome'), (' read', 'antonym', 'when reach'), ('once bind', 'antonym', ' release'), ('when', 'related_to', 'once'), ('chain', 'synonym', 'bind'), ('amino acid', 'is_a', ' acid'), ('', 'unknown', 'stop')]
+
+Step 2: Align all the relationships found with the NLI labels: Entailment, Neutral, Contradiction, classifying them into groups G1, G2, G3 and G4 according to the following:
+G1: will contain the list of generalization or equivalence relationships that usually correspond to Entailment.
+G2: will contain the list of relationships of opposition that often correspond to Contradiction.
+G3: will contain the list of relationships of concretization or specificity that typically correspond to Neutral.
+G4: will contain the list of terms of the hypothesis with an unknown relationship with the premise. 
+
+G1: [('complementary amino', 'same', ' amino'), ('next codon', 'same', ' codon'), (' ribosome', 'same', ' ribosome'), ('chain', 'synonym', 'bind')]
+G2: [(' read', 'antonym', 'when reach'), ('once bind', 'antonym', ' release')]
+G3: [('when', 'related_to', 'once'), ('amino acid', 'is_a', ' acid')]
+G4: [('', 'unknown', 'stop')]
+
+Step 3: Analyze each group of relationships, weigh the groups obtained that support your decision, and classify the correct label for the premise and hypothesis presented and give an explanation.
+
+* Output *
+{
+"G1":[('complementary amino', 'same', ' amino'), ('next codon', 'same', ' codon'), (' ribosome', 'same', ' ribosome'), ('chain', 'synonym', 'bind')],
+"G2":[(' read', 'antonym', 'when reach'), ('once bind', 'antonym', ' release')],
+"G3":[('when', 'related_to', 'once'), ('amino acid', 'is_a', ' acid')],
+"G4":[('', 'unknown', 'stop')],
+"Answer": "NEUTRAL",
+"Explanation": ""
+}
+
+** Sample 3 **
+* Input *
+You are an expert in Recognizing Textual Entailment over pairs of Premise and Hypothesis.
+Classify the relationship between the given Premise and Hypothesis as one of the following: "Entailment", "Neutral" or "Contradiction". 
+
+Premise: the flowing electrons and the atoms of the conductor.
+Hypothesis: Atoms of metals are good conductors of electricity because they give up electrons.
+
+* Let's think step by step *
+
+Step 1: Identify all the relationships of generalization, equivalence, opposition, concretization or specificity between terms from the premise to the hypothesis. This process is performed for each of the terms in the hypothesis.
+Use the following format for relations: (p_i,rel,h_j), where p_i is a term from the premise, h_j is a term from the hypothesis, and rel is the relation linking these terms.
+If any terms of the hypothesis with an unknown relationship with terms in the premise, identify them as ("",unknown,h_k) where h_k is in the hypothesis and there is no term in the premise that is linked to the hypothesis.
+List the relationships found.
+
+[(' atom', 'same', ' atom'), (' electron', 'same', ' electron'), (' flow', 'antonym', 'give up because'), ('metal', 'is_a', 'conductor'), ('good conductor', 'is_a', ' conductor'), ('electricity', 'related_to', 'electron'), ('', 'unknown', 'good'), ('', 'unknown', 'because')]
+
+Step 2: Align all the relationships found with the NLI labels: Entailment, Neutral, Contradiction, classifying them into groups G1, G2, G3 and G4 according to the following:
+G1: will contain the list of generalization or equivalence relationships that usually correspond to Entailment.
+G2: will contain the list of relationships of opposition that often correspond to Contradiction.
+G3: will contain the list of relationships of concretization or specificity that typically correspond to Neutral.
+G4: will contain the list of terms of the hypothesis with an unknown relationship with the premise. 
+
+G1: [(' atom', 'same', ' atom'), (' electron', 'same', ' electron')]
+G2: [(' flow', 'antonym', 'give up because')]
+G3: [('metal', 'is_a', 'conductor'), ('good conductor', 'is_a', ' conductor'), ('electricity', 'related_to', 'electron')]
+G4: [('', 'unknown', 'good'), ('', 'unknown', 'because')]
+
+Step 3: Analyze each group of relationships, weigh the groups obtained that support your decision, and classify the correct label for the premise and hypothesis presented.
+
+* Output *
+{
+"G1":[(' atom', 'same', ' atom'), (' electron', 'same', ' electron')],
+"G2":[(' flow', 'antonym', 'give up because')],
+"G3":[('metal', 'is_a', 'conductor'), ('good conductor', 'is_a', ' conductor'), ('electricity', 'related_to', 'electron')],
+"G4":[('', 'unknown', 'good'), ('', 'unknown', 'because')],
+"Answer": "CONTRADICTION",
+"Explanation": ""
+}
+
+** Sample 4 **
+* Input *
+You are an expert in Recognizing Textual Entailment over pairs of Premise and Hypothesis.
+Classify the relationship between the given Premise and Hypothesis as one of the following: "Entailment", "Neutral" or "Contradiction". 
+
+Premise: There was a change in the actors playing certain characters in season two.
+Hypothesis: A change of season and less food usually cause certain animals to migrate.
+
+* Let's think step by step *
+
+Step 1: Identify all the relationships of generalization, equivalence, opposition, concretization or specificity between terms from the premise to the hypothesis. This process is performed for each of the terms in the hypothesis.
+Use the following format for relations: (p_i,rel,h_j), where p_i is a term from the premise, h_j is a term from the hypothesis, and rel is the relation linking these terms.
+If any terms of the hypothesis with an unknown relationship with terms in the premise, identify them as ("",unknown,h_k) where h_k is in the hypothesis and there is no term in the premise that is linked to the hypothesis.
+List the relationships found.
+
+[(' change', 'same', ' change'), ('two season', 'same', ' season'), (' certain', 'same', ' certain'), ('certain character', 'is_a', 'certain animal'), ('food', 'related_to', 'season'), ('migrate', 'is_a', 'change'), ('', 'unknown', 'less'), ('', 'unknown', 'cause'), ('', 'unknown', 'to')]
+
+Step 2: Align all the relationships found with the NLI labels: Entailment, Neutral, Contradiction, classifying them into groups G1, G2, G3 and G4 according to the following:
+G1: will contain the list of generalization or equivalence relationships that usually correspond to Entailment.
+G2: will contain the list of relationships of opposition that often correspond to Contradiction.
+G3: will contain the list of relationships of concretization or specificity that typically correspond to Neutral.
+G4: will contain the list of terms of the hypothesis with an unknown relationship with the premise. 
+
+G1: [(' change', 'same', ' change'), ('two season', 'same', ' season'), (' certain', 'same', ' certain'), ('certain character', 'is_a', 'certain animal')]
+G2: []
+G3: [('food', 'related_to', 'season'), ('migrate', 'is_a', 'change')]
+G4: [('', 'unknown', 'less'), ('', 'unknown', 'cause'), ('', 'unknown', 'to')]
+
+Step 3: Analyze each group of relationships, weigh the groups obtained that support your decision, and classify the correct label for the premise and hypothesis presented.
+
+* Output *
+{
+"G1":[(' change', 'same', ' change'), ('two season', 'same', ' season'), (' certain', 'same', ' certain'), ('certain character', 'is_a', 'certain animal')],
+"G2":[],
+"G3":[('food', 'related_to', 'season'), ('migrate', 'is_a', 'change')],
+"G4":[('', 'unknown', 'less'), ('', 'unknown', 'cause'), ('', 'unknown', 'to')],
+"Answer": "NEUTRAL",
+"Explanation": ""
+}
+
+** Sample 5 **
+* Input *
+You are an expert in Recognizing Textual Entailment over pairs of Premise and Hypothesis.
+Classify the relationship between the given Premise and Hypothesis as one of the following: "Entailment", "Neutral" or "Contradiction". 
+
+Premise: Soap molecules in the bubble mixture are attracted to each other.
+Hypothesis: Compared with the molecules of many other substances, molecules of water are strongly attracted to each other.
+
+* Let's think step by step *
+
+Step 1: Identify all the relationships of generalization, equivalence, opposition, concretization or specificity between terms from the premise to the hypothesis. This process is performed for each of the terms in the hypothesis.
+Use the following format for relations: (p_i,rel,h_j), where p_i is a term from the premise, h_j is a term from the hypothesis, and rel is the relation linking these terms.
+If any terms of the hypothesis with an unknown relationship with terms in the premise, identify them as ("",unknown,h_k) where h_k is in the hypothesis and there is no term in the premise that is linked to the hypothesis.
+List the relationships found.
+
+[(' molecule', 'same', ' molecule'), (' soap', 'antonym', ' water'), ('many other substance', 'is_a', ' molecule'), ('strongly attract', 'is_a', ' attract'), ('', 'unknown', 'compare'), ('', 'unknown', 'many'), ('', 'unknown', 'other')]
+
+Step 2: Align all the relationships found with the NLI labels: Entailment, Neutral, Contradiction, classifying them into groups G1, G2, G3 and G4 according to the following:
+G1: will contain the list of generalization or equivalence relationships that usually correspond to Entailment.
+G2: will contain the list of relationships of opposition that often correspond to Contradiction.
+G3: will contain the list of relationships of concretization or specificity that typically correspond to Neutral.
+G4: will contain the list of terms of the hypothesis with an unknown relationship with the premise. 
+
+G1: [(' molecule', 'same', ' molecule')]
+G2: [(' soap', 'antonym', ' water')]
+G3: [('many other substance', 'is_a', ' molecule'), ('strongly attract', 'is_a', ' attract')]
+G4: [('', 'unknown', 'compare'), ('', 'unknown', 'many'), ('', 'unknown', 'other')]
+
+Step 3: Analyze each group of relationships, weigh the groups obtained that support your decision, and classify the correct label for the premise and hypothesis presented.
+
+* Output *
+{
+"G1":[(' molecule', 'same', ' molecule')],
+"G2":[(' soap', 'antonym', ' water')],
+"G3":[('many other substance', 'is_a', ' molecule'), ('strongly attract', 'is_a', ' attract')],
+"G4":[('', 'unknown', 'compare'), ('', 'unknown', 'many'), ('', 'unknown', 'other')],
+"Answer": "CONTRADICTION",
+"Explanation": ""
+}
+
+** Sample 6 **
+* Input *
+You are an expert in Recognizing Textual Entailment over pairs of Premise and Hypothesis.
+Classify the relationship between the given Premise and Hypothesis as one of the following: "Entailment", "Neutral" or "Contradiction". 
+
+Premise: What this means is that pressure is the amount of force, or push or pull, exerted by a material on a given area of another material.
+Hypothesis: Pressure is defined in physics as the amount of force pushing against a given area.
+
+* Let's think step by step *
+
+Step 1: Identify all the relationships of generalization, equivalence, opposition, concretization or specificity between terms from the premise to the hypothesis. This process is performed for each of the terms in the hypothesis.
+Use the following format for relations: (p_i,rel,h_j), where p_i is a term from the premise, h_j is a term from the hypothesis, and rel is the relation linking these terms.
+If any terms of the hypothesis with an unknown relationship with terms in the premise, identify them as ("",unknown,h_k) where h_k is in the hypothesis and there is no term in the premise that is linked to the hypothesis.
+List the relationships found.
+
+[(' pressure', 'same', ' pressure'), (' amount', 'same', ' amount'), (' force', 'same', ' force'), (' push', 'same', ' push'), (' give', 'same', ' give'), (' area', 'same', ' area'), ('physics', 'related_to', 'force'), ('', 'unknown', 'define')]
+
+Step 2: Align all the relationships found with the NLI labels: Entailment, Neutral, Contradiction, classifying them into groups G1, G2, G3 and G4 according to the following:
+G1: will contain the list of generalization or equivalence relationships that usually correspond to Entailment.
+G2: will contain the list of relationships of opposition that often correspond to Contradiction.
+G3: will contain the list of relationships of concretization or specificity that typically correspond to Neutral.
+G4: will contain the list of terms of the hypothesis with an unknown relationship with the premise. 
+
+G1: [(' pressure', 'same', ' pressure'), (' amount', 'same', ' amount'), (' force', 'same', ' force'), (' push', 'same', ' push'), (' give', 'same', ' give'), (' area', 'same', ' area')]
+G2: []
+G3: [('physics', 'related_to', 'force')]
+G4: [('', 'unknown', 'define')]
+
+Step 3: Analyze each group of relationships, weigh the groups obtained that support your decision, and classify the correct label for the premise and hypothesis presented.
+
+* Output *
+{
+"G1":[(' pressure', 'same', ' pressure'), (' amount', 'same', ' amount'), (' force', 'same', ' force'), (' push', 'same', ' push'), (' give', 'same', ' give'), (' area', 'same', ' area')],
+"G2":[],
+"G3":[('physics', 'related_to', 'force')],
+"G4":[('', 'unknown', 'define')],
+"Answer": "ENTAILMENT",
+"Explanation": ""
+}
+

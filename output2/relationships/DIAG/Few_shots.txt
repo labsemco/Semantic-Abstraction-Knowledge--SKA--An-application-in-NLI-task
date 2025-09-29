@@ -1,0 +1,241 @@
+** Sample 1 **
+* Input *
+You are an expert in Recognizing Textual Entailment over pairs of Premise and Hypothesis.
+Classify the relationship between the given Premise and Hypothesis as one of the following: "Entailment", "Neutral" or "Contradiction". 
+
+Premise: House Speaker Paul Ryan was facing problems from fellow Republicans unhappy with his leadership.
+Hypothesis: House Speaker Paul Ryan was facing problems from fellow Republicans dissatisfied with his leadership.
+
+* Let's think step by step *
+
+Step 1: Identify all the relationships of generalization, equivalence, opposition, concretization or specificity between terms from the premise to the hypothesis. This process is performed for each of the terms in the hypothesis.
+Use the following format for relations: (p_i,rel,h_j), where p_i is a term from the premise, h_j is a term from the hypothesis, and rel is the relation linking these terms.
+If any terms of the hypothesis with an unknown relationship with terms in the premise, identify them as ("",unknown,h_k) where h_k is in the hypothesis and there is no term in the premise that is linked to the hypothesis.
+List the relationships found.
+
+[(' house', 'same', ' house'), ('house speaker', 'same', 'house speaker'), (' paul', 'same', ' paul'), (' ryan', 'same', ' ryan'), ('ryan face', 'same', 'ryan face'), (' problem', 'same', ' problem'), (' fellow', 'same', ' fellow'), ('unhappy fellow republican', 'synonym', ' republicans'), (' leadership', 'same', ' leadership'), ('', 'unknown', 'dissatisfy')]
+
+Step 2: Align all the relationships found with the NLI labels: Entailment, Neutral, Contradiction, classifying them into groups G1, G2, G3 and G4 according to the following:
+G1: will contain the list of generalization or equivalence relationships that usually correspond to Entailment.
+G2: will contain the list of relationships of opposition that often correspond to Contradiction.
+G3: will contain the list of relationships of concretization or specificity that typically correspond to Neutral.
+G4: will contain the list of terms of the hypothesis with an unknown relationship with the premise. 
+
+G1: [(' house', 'same', ' house'), ('house speaker', 'same', 'house speaker'), (' paul', 'same', ' paul'), (' ryan', 'same', ' ryan'), ('ryan face', 'same', 'ryan face'), (' problem', 'same', ' problem'), (' fellow', 'same', ' fellow'), ('unhappy fellow republican', 'synonym', ' republicans'), (' leadership', 'same', ' leadership')]
+G2: []
+G3: []
+G4: [('', 'unknown', 'dissatisfy')]
+
+Step 3: Analyze each group of relationships, weigh the groups obtained that support your decision, and classify the correct label for the premise and hypothesis presented and give an explanation.
+
+* Output *
+{
+"G1":[(' house', 'same', ' house'), ('house speaker', 'same', 'house speaker'), (' paul', 'same', ' paul'), (' ryan', 'same', ' ryan'), ('ryan face', 'same', 'ryan face'), (' problem', 'same', ' problem'), (' fellow', 'same', ' fellow'), ('unhappy fellow republican', 'synonym', ' republicans'), (' leadership', 'same', ' leadership')],
+"G2":[],
+"G3":[],
+"G4":[('', 'unknown', 'dissatisfy')],
+"Answer": "ENTAILMENT",
+"Explanation": ""
+}
+
+** Sample 2 **
+* Input *
+You are an expert in Recognizing Textual Entailment over pairs of Premise and Hypothesis.
+Classify the relationship between the given Premise and Hypothesis as one of the following: "Entailment", "Neutral" or "Contradiction". 
+
+Premise: Two of the three trees outside my window, with their branches dangling and swaying in the wind, have already bloomed, and it's not even April.
+Hypothesis: Of the three trees outside my window, with their branches dangling and swaying in the wind, two have already bloomed, and it's not even April.
+
+* Let's think step by step *
+
+Step 1: Identify all the relationships of generalization, equivalence, opposition, concretization or specificity between terms from the premise to the hypothesis. This process is performed for each of the terms in the hypothesis.
+Use the following format for relations: (p_i,rel,h_j), where p_i is a term from the premise, h_j is a term from the hypothesis, and rel is the relation linking these terms.
+If any terms of the hypothesis with an unknown relationship with terms in the premise, identify them as ("",unknown,h_k) where h_k is in the hypothesis and there is no term in the premise that is linked to the hypothesis.
+List the relationships found.
+
+[(' window', 'same', ' window'), (' branch', 'same', ' branch'), (' dangle', 'same', ' dangle'), (' sway', 'same', ' sway'), (' wind', 'same', ' wind'), ('already already already bloom', 'same', 'already have two bloom'), (' april', 'same', ' april'), ('three outside with tree', 'is_a', 'three outside tree')]
+
+Step 2: Align all the relationships found with the NLI labels: Entailment, Neutral, Contradiction, classifying them into groups G1, G2, G3 and G4 according to the following:
+G1: will contain the list of generalization or equivalence relationships that usually correspond to Entailment.
+G2: will contain the list of relationships of opposition that often correspond to Contradiction.
+G3: will contain the list of relationships of concretization or specificity that typically correspond to Neutral.
+G4: will contain the list of terms of the hypothesis with an unknown relationship with the premise. 
+
+G1: [(' window', 'same', ' window'), (' branch', 'same', ' branch'), (' dangle', 'same', ' dangle'), (' sway', 'same', ' sway'), (' wind', 'same', ' wind'), ('already already already bloom', 'same', 'already have two bloom'), (' april', 'same', ' april')]
+G2: []
+G3: [('three outside with tree', 'is_a', 'three outside tree')]
+G4: []
+
+Step 3: Analyze each group of relationships, weigh the groups obtained that support your decision, and classify the correct label for the premise and hypothesis presented and give an explanation.
+
+* Output *
+{
+"G1":[(' window', 'same', ' window'), (' branch', 'same', ' branch'), (' dangle', 'same', ' dangle'), (' sway', 'same', ' sway'), (' wind', 'same', ' wind'), ('already already already bloom', 'same', 'already have two bloom'), (' april', 'same', ' april')],
+"G2":[],
+"G3":[('three outside with tree', 'is_a', 'three outside tree')],
+"G4":[],
+"Answer": "ENTAILMENT",
+"Explanation": ""
+}
+
+** Sample 3 **
+* Input *
+You are an expert in Recognizing Textual Entailment over pairs of Premise and Hypothesis.
+Classify the relationship between the given Premise and Hypothesis as one of the following: "Entailment", "Neutral" or "Contradiction". 
+
+
+Premise: I won't say that she didn't steal my money.
+Hypothesis: I will say that she stole my money.
+
+* Let's think step by step *
+
+Step 1: Identify all the relationships of generalization, equivalence, opposition, concretization or specificity between terms from the premise to the hypothesis. This process is performed for each of the terms in the hypothesis.
+Use the following format for relations: (p_i,rel,h_j), where p_i is a term from the premise, h_j is a term from the hypothesis, and rel is the relation linking these terms.
+If any terms of the hypothesis with an unknown relationship with terms in the premise, identify them as ("",unknown,h_k) where h_k is in the hypothesis and there is no term in the premise that is linked to the hypothesis.
+List the relationships found.
+
+[(' that', 'same', ' that'), (' money', 'same', ' money'), ('not will say', 'distinct_from', 'will say'), ('do not steal', 'distinct_from', ' steal')]
+
+Step 2: Align all the relationships found with the NLI labels: Entailment, Neutral, Contradiction, classifying them into groups G1, G2, G3 and G4 according to the following:
+G1: will contain the list of generalization or equivalence relationships that usually correspond to Entailment.
+G2: will contain the list of relationships of opposition that often correspond to Contradiction.
+G3: will contain the list of relationships of concretization or specificity that typically correspond to Neutral.
+G4: will contain the list of terms of the hypothesis with an unknown relationship with the premise. 
+
+G1: [(' that', 'same', ' that'), (' money', 'same', ' money')]
+G2: [('not will say', 'distinct_from', 'will say'), ('do not steal', 'distinct_from', ' steal')]
+G3: []
+G4: []
+
+Step 3: Analyze each group of relationships, weigh the groups obtained that support your decision, and classify the correct label for the premise and hypothesis presented.
+
+* Output *
+{
+"G1":[(' that', 'same', ' that'), (' money', 'same', ' money')],
+"G2":[('not will say', 'distinct_from', 'will say'), ('do not steal', 'distinct_from', ' steal')],
+"G3":[],
+"G4":[],
+"Answer": "CONTRADICTION",
+"Explanation": ""
+}
+
+** Sample 4 **
+* Input *
+You are an expert in Recognizing Textual Entailment over pairs of Premise and Hypothesis.
+Classify the relationship between the given Premise and Hypothesis as one of the following: "Entailment", "Neutral" or "Contradiction". 
+
+Premise: Furthermore, male characters use inhibitory language more (inhib), which contains words pertaining to blocking or allowing, suggesting that these characters are in positions of power.
+Hypothesis: Furthermore, male characters use inhibitory language more (inhib), which contains words pertaining to blocking or allowing, suggesting that these characters are more often in positions where they are blocked or allowed to do things by others.
+
+* Let's think step by step *
+
+Step 1: Identify all the relationships of generalization, equivalence, opposition, concretization or specificity between terms from the premise to the hypothesis. This process is performed for each of the terms in the hypothesis.
+Use the following format for relations: (p_i,rel,h_j), where p_i is a term from the premise, h_j is a term from the hypothesis, and rel is the relation linking these terms.
+If any terms of the hypothesis with an unknown relationship with terms in the premise, identify them as ("",unknown,h_k) where h_k is in the hypothesis and there is no term in the premise that is linked to the hypothesis.
+List the relationships found.
+
+[(' male', 'same', ' male'), ('male character', 'same', 'male character'), ('furthermore use', 'same', 'furthermore use'), (' inhibitory', 'same', ' inhibitory'), ('inhibitory language', 'same', 'inhibitory language'), (' more', 'same', ' more'), (' contain', 'same', ' contain'), (' pertain', 'same', ' pertain'), (' blocking', 'same', ' blocking'), (' suggest', 'same', ' suggest'), (' that', 'same', ' that'), (' blocking', 'synonym', ' block'), (' allow', 'antonym', 'by do'), (' position', 'distinct_from', ' thing'), ('where allow', 'is_a', ' allow'), ('where', 'related_to', 'position'), ('', 'unknown', 'inhib'), ('', 'unknown', 'to'), ('', 'unknown', 'other')]
+
+Step 2: Align all the relationships found with the NLI labels: Entailment, Neutral, Contradiction, classifying them into groups G1, G2, G3 and G4 according to the following:
+G1: will contain the list of generalization or equivalence relationships that usually correspond to Entailment.
+G2: will contain the list of relationships of opposition that often correspond to Contradiction.
+G3: will contain the list of relationships of concretization or specificity that typically correspond to Neutral.
+G4: will contain the list of terms of the hypothesis with an unknown relationship with the premise. 
+
+G1: [(' male', 'same', ' male'), ('male character', 'same', 'male character'), ('furthermore use', 'same', 'furthermore use'), (' inhibitory', 'same', ' inhibitory'), ('inhibitory language', 'same', 'inhibitory language'), (' more', 'same', ' more'), (' contain', 'same', ' contain'), (' pertain', 'same', ' pertain'), (' blocking', 'same', ' blocking'), (' suggest', 'same', ' suggest'), (' that', 'same', ' that'), (' blocking', 'synonym', ' block')]
+G2: [(' allow', 'antonym', 'by do'), (' position', 'distinct_from', ' thing')]
+G3: [('where allow', 'is_a', ' allow'), ('where', 'related_to', 'position')]
+G4: [('', 'unknown', 'inhib'), ('', 'unknown', 'to'), ('', 'unknown', 'other')]
+
+Step 3: Analyze each group of relationships, weigh the groups obtained that support your decision, and classify the correct label for the premise and hypothesis presented.
+
+* Output *
+{
+"G1":[(' male', 'same', ' male'), ('male character', 'same', 'male character'), ('furthermore use', 'same', 'furthermore use'), (' inhibitory', 'same', ' inhibitory'), ('inhibitory language', 'same', 'inhibitory language'), (' more', 'same', ' more'), (' contain', 'same', ' contain'), (' pertain', 'same', ' pertain'), (' blocking', 'same', ' blocking'), (' suggest', 'same', ' suggest'), (' that', 'same', ' that'), (' blocking', 'synonym', ' block')],
+"G2":[(' allow', 'antonym', 'by do'), (' position', 'distinct_from', ' thing')],
+"G3":[('', 'unknown', 'inhib'), ('', 'unknown', 'to'), ('', 'unknown', 'other')],
+"G4":[('', 'unknown', 'inhib'), ('', 'unknown', 'to'), ('', 'unknown', 'other')],
+"Answer": "CONTRADICTION",
+"Explanation": ""
+}
+
+** Sample 5 **
+* Input *
+You are an expert in Recognizing Textual Entailment over pairs of Premise and Hypothesis.
+Classify the relationship between the given Premise and Hypothesis as one of the following: "Entailment", "Neutral" or "Contradiction". 
+
+Premise: All speech is political speech.
+Hypothesis: Joan doubts that all speech is political speech.
+
+* Let's think step by step *
+
+Step 1: Identify all the relationships of generalization, equivalence, opposition, concretization or specificity between terms from the premise to the hypothesis. This process is performed for each of the terms in the hypothesis.
+Use the following format for relations: (p_i,rel,h_j), where p_i is a term from the premise, h_j is a term from the hypothesis, and rel is the relation linking these terms.
+If any terms of the hypothesis with an unknown relationship with terms in the premise, identify them as ("",unknown,h_k) where h_k is in the hypothesis and there is no term in the premise that is linked to the hypothesis.
+List the relationships found.
+
+[('political speech', 'same', 'political speech'), (' political', 'same', ' political'), ('', 'unknown', 'joan'), ('', 'unknown', 'doubt'), ('', 'unknown', 'that')]
+
+Step 2: Align all the relationships found with the NLI labels: Entailment, Neutral, Contradiction, classifying them into groups G1, G2, G3 and G4 according to the following:
+G1: will contain the list of generalization or equivalence relationships that usually correspond to Entailment.
+G2: will contain the list of relationships of opposition that often correspond to Contradiction.
+G3: will contain the list of relationships of concretization or specificity that typically correspond to Neutral.
+G4: will contain the list of terms of the hypothesis with an unknown relationship with the premise. 
+
+G1: [('political speech', 'same', 'political speech'), (' political', 'same', ' political')]
+G2: []
+G3: []
+G4: [('', 'unknown', 'joan'), ('', 'unknown', 'doubt'), ('', 'unknown', 'that')]
+
+Step 3: Analyze each group of relationships, weigh the groups obtained that support your decision, and classify the correct label for the premise and hypothesis presented.
+
+* Output *
+{
+"G1":[('political speech', 'same', 'political speech'), (' political', 'same', ' political')],
+"G2":[],
+"G3":[],
+"G4":[('', 'unknown', 'joan'), ('', 'unknown', 'doubt'), ('', 'unknown', 'that')],
+"Answer": "NEUTRAL",
+"Explanation": ""
+}
+
+** Sample 6 **
+* Input *
+You are an expert in Recognizing Textual Entailment over pairs of Premise and Hypothesis.
+Classify the relationship between the given Premise and Hypothesis as one of the following: "Entailment", "Neutral" or "Contradiction". 
+
+Premise: So far two of my cherry trees have already bloomed, and it's not even April.
+Hypothesis: So far two of my trees have already bloomed, and it's not even April.
+
+* Let's think step by step *
+
+Step 1: Identify all the relationships of generalization, equivalence, opposition, concretization or specificity between terms from the premise to the hypothesis. This process is performed for each of the terms in the hypothesis.
+Use the following format for relations: (p_i,rel,h_j), where p_i is a term from the premise, h_j is a term from the hypothesis, and rel is the relation linking these terms.
+If any terms of the hypothesis with an unknown relationship with terms in the premise, identify them as ("",unknown,h_k) where h_k is in the hypothesis and there is no term in the premise that is linked to the hypothesis.
+List the relationships found.
+
+[(' tree', 'same', ' tree'), (' april', 'same', ' april'), ('far already have two bloom', 'is_a', 'already have two bloom')]
+
+Step 2: Align all the relationships found with the NLI labels: Entailment, Neutral, Contradiction, classifying them into groups G1, G2, G3 and G4 according to the following:
+G1: will contain the list of generalization or equivalence relationships that usually correspond to Entailment.
+G2: will contain the list of relationships of opposition that often correspond to Contradiction.
+G3: will contain the list of relationships of concretization or specificity that typically correspond to Neutral.
+G4: will contain the list of terms of the hypothesis with an unknown relationship with the premise. 
+
+G1: [(' tree', 'same', ' tree'), (' april', 'same', ' april')]
+G2: []
+G3: [('far already have two bloom', 'is_a', 'already have two bloom')]
+G4: []
+
+Step 3: Analyze each group of relationships, weigh the groups obtained that support your decision, and classify the correct label for the premise and hypothesis presented.
+
+* Output *
+{
+"G1":[(' tree', 'same', ' tree'), (' april', 'same', ' april')],
+"G2":[],
+"G3":[('far already have two bloom', 'is_a', 'already have two bloom')],
+"G4":[],
+"Answer": "NEUTRAL",
+"Explanation": ""
+}
+
